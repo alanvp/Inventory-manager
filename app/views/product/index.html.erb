@@ -1,3 +1,5 @@
+<h4>To see a product's details, edit a product, or delete a product, click on a product below.</h4>
+
 <% @products.each do |product| %>
 
 	<p><%= link_to "#{product.name}", show_product_path(product) %></p>
