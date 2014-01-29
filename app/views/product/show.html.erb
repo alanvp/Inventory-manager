@@ -1,0 +1,13 @@
+<p>Name: <%=@product.name%></p>
+<p>Description: <%=@product.description%></p>
+<p>Price: $<%=@product.price%></p>
+<p>Categories:
+<ul>
+  <%@product.categories.each do |cat|%>
+ 	<li>
+	 	<%= cat.name %>
+	</li>
+  <%end%>
+</ul></p>	
+<p><%= link_to "Edit product", edit_product_path(@product) %></p>
+<p><%= link_to "Delete product", delete_product_path(@product) %></p>
