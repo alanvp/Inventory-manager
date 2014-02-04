@@ -1,0 +1,8 @@
+<h4>To see a category's details, edit a category, or delete a category, click on a category below.</h4>
+
+<% @categories.each do |category| %>
+
+	<p><%= link_to "#{category.name}", show_category_path(category) %></p>
+<%end%>
+
+

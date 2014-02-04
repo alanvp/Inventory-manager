@@ -1,0 +1,17 @@
+<h4> Create a new product </h4>
+<%= form_for :new_prod, url: create_product_path, method: :post do |f| %>
+	<p>
+    <%= f.text_field :name, placeholder: "Enter product name" %>
+    </p>
+   	<p>
+    <%= f.text_field :description, placeholder: "Enter product description" %>
+    </p>        
+    <p>
+    <%= f.text_field :price, placeholder: "Enter product price" %>
+    </p>             
+    <%= f.text_field :cats, placeholder: "Enter categories seperated by commas" %>
+    </p>                
+
+
+    <p><%= f.submit %></p>
+<% end %>

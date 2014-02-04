@@ -1,0 +1,11 @@
+<p>Name: <%=@category.name%></p>
+<p>Associated products:</p>
+<ul>
+  <%@category.products.each do |p|%>
+ 	<li>
+	 	<%= p.name %>
+	</li>
+  <%end%>
+</ul></p>	
+<p><%= link_to "Edit category", edit_category_path(@category) %></p>
+<p><%= link_to "Delete product", delete_category_path(@category) %></p>
